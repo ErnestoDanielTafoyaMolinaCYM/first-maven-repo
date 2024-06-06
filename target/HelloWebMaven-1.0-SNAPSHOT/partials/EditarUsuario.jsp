@@ -13,7 +13,7 @@
         <%@include file="./shared/styles.jsp" %>
         <title>Editar datos</title>
     </head>
-    <% User user = (User) request.getSession().getAttribute(""); %>
+    <% User user = (User) request.getSession().getAttribute("usuarioEditar"); %>
     <body class="container">
         <div class="mt-5 justify-content-center align-items-center">
             <h2>Edicion de datos</h2>
@@ -38,7 +38,7 @@
                         <input type="text" name="telefono" class="form-control" value="<%=user.getTelefono() %>" />
                     </label>
                 </p>
-                <button type="submit" class="btn btn-success ">Editar</button>
+                <button type="submit" class="btn btn-primary ">Guardar cambios</button>
             </form>
         </div>
         <%@include file="./shared/scripts.jsp" %>

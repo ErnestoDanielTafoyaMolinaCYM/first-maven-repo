@@ -11,7 +11,7 @@
 <form action="SvEditar" method="GET">
     <p>
         <label>Id</label>
-        <input type="text" name="id_usuarioEdit" class="form-control"/>
+        <input type="text" name="id_usuarioEdit" class="form-control" required/>
     </p>
     <button type="submit" class="btn btn-primary w-100" id="deleteUser">Editar Usuario</button>
 </form>

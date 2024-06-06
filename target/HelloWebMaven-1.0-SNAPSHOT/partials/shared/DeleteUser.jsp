@@ -10,7 +10,7 @@
 <form action="SvEliminar" method="POST">
     <p>
         <label>Id</label>
-        <input type="text" name="id_usuario" class="form-control"/>
+        <input type="text" name="id_usuario" class="form-control" required/>
     </p>
     <button type="submit" class="btn btn-danger w-100" id="deleteUser">Eliminar Usuario</button>
 </form>
