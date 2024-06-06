@@ -15,6 +15,7 @@
     </head>
     <% User user = (User) request.getSession().getAttribute("usuarioEditar"); %>
     <body class="container">
+        <a href="/HelloWebMaven" class="btn btn-secondary"><-</a>
         <div class="mt-5 justify-content-center align-items-center">
             <h2>Edicion de datos</h2>
             <form action="SvEditar" class="form" method="POST">
