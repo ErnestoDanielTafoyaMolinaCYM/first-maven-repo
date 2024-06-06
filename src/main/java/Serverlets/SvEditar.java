@@ -26,8 +26,6 @@ public class SvEditar extends HttpServlet {
         int id_userEdit = Integer.parseInt(request.getParameter("id_usuarioEdit"));
         User user = userController.getUser(id_userEdit);
         
-        System.out.println("el usuario es: " + user.toString());
-        
         HttpSession sesion = request.getSession();
         sesion.setAttribute("usuarioEditar", user);
         

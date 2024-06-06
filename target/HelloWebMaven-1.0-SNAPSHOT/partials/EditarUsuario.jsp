@@ -18,7 +18,8 @@
         <a href="/HelloWebMaven" class="btn btn-secondary"><-</a>
         <div class="mt-5 justify-content-center align-items-center">
             <h2>Edicion de datos</h2>
-            <form action="SvEditar" class="form" method="POST">
+            <form action="${pageContext.request.contextPath}/SvEditar" class="form" method="POST">
+                <%= user.getId() %>
                 <p class="form-group">
                     <label>DNI:     
                         <input type="text" name="dni" class="form-control"  value="<%=user.getDni() %>" />
