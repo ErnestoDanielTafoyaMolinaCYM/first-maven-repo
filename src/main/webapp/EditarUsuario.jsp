@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <%@include file="./shared/styles.jsp" %>
+        <%@include file="./partials/shared/styles.jsp" %>
         <title>Editar datos</title>
     </head>
     <% User user = (User) request.getSession().getAttribute("usuarioEditar"); %>
@@ -18,7 +18,7 @@
         <a href="/HelloWebMaven" class="btn btn-secondary"><-</a>
         <div class="mt-5 justify-content-center align-items-center">
             <h2>Edicion de datos</h2>
-            <form action="${pageContext.request.contextPath}/SvEditar" class="form" method="POST">
+            <form action="SvEditar" class="form" method="POST">
                 <%= user.getId() %>
                 <p class="form-group">
                     <label>DNI:     
@@ -43,6 +43,6 @@
                 <button type="submit" class="btn btn-primary ">Guardar cambios</button>
             </form>
         </div>
-        <%@include file="./shared/scripts.jsp" %>
+        <%@include file="./partials/shared/scripts.jsp" %>
     </body>
 </html>

@@ -29,7 +29,7 @@ public class SvEditar extends HttpServlet {
         HttpSession sesion = request.getSession();
         sesion.setAttribute("usuarioEditar", user);
         
-        response.sendRedirect("partials/EditarUsuario.jsp");
+        response.sendRedirect("EditarUsuario.jsp");
         
     }
 
@@ -42,7 +42,7 @@ public class SvEditar extends HttpServlet {
             String apellido = request.getParameter("apellido");
             String telefono = request.getParameter("telefono");
             
-            User user = new User();
+            User user = (User)request.getSession().getAttribute("usuarioEditar");
             
             user.setDni(dni);
             user.setNombre(nombre);
