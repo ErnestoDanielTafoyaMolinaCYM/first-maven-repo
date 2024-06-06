@@ -1,0 +1,11 @@
+Models\Controladora.class
+Models\User_.class
+percistencia\UserJpaController.class
+Models\User.class
+percistencia\exceptions\NonexistentEntityException.class
+Serverlets\SvEliminar.class
+percistencia\exceptions\IllegalOrphanException.class
+Serverlets\SvUsuarios.class
+percistencia\exceptions\PreexistingEntityException.class
+percistencia\ControladoraPersistencia.class
+Serverlets\SvEditar.class
